@@ -107,5 +107,6 @@ header,
 footer {
     a:link {
         text-decoration: none;
+        font-style: italic;
     }
 }
