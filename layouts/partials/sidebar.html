@@ -1,12 +1,15 @@
 <aside>
 	<div>
 		<div>
-			<h3>LATEST POSTS</h3>
+			<h3>Related posts</h3>
 		</div>
 		<div>
 			<ul>
-				{{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+				{{ $related := .Site.RegularPages.Related . | first 5 }}
+				{{ with $related }}
+					{{ range . }}
+					<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+					{{ end }}
 				{{ end }}
 			</ul>
 		</div>
