@@ -19,7 +19,7 @@ html {
         --linkcolor: #55bbff;
         --visitedcolor: #5bf;
         --precolor: #fff;
-        --prebgcolor: #383838;
+        --prebgcolor: rgb(41, 41, 41);
     }
 }
 
@@ -72,8 +72,10 @@ code {
 pre {
     color: var(--precolor);
     background: var(--prebgcolor);
-    padding: 24px;
-    overflow-x: auto
+    padding: 12px;
+    overflow-x: auto;
+    font-size: 0.9em;
+    line-height: 1.4;
 }
 
 article {
