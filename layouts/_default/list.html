@@ -13,8 +13,8 @@
 			{{ range .Paginator.Pages }}
 			<li>
 				<div class="post-title">
-					{{ if eq $listtitle "Posts" }}
-					{{ .Date.Format "2006-01-02" }} <a href="{{ .RelPermalink }}">{{.Title }}</a>
+					{{ if eq $listtitle "Blog" }}
+					<time>{{ .Date.Format "2006-01-02" }}</time> <a href="{{ .RelPermalink }}">{{.Title }}</a>
 					{{ else }}
 					<a href="{{ .RelPermalink }}">{{.Title }}</a>
 					{{ end }}
