@@ -8,6 +8,14 @@
 		           <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
        	       {{ end }}
 			{{ end }}
+			{{- if .Params.toc -}}
+            <div class="toc">
+                <h2>Table of Content</h2>
+                <aside>
+                    {{ .TableOfContents }}
+                </aside>
+            </div>
+            {{- end -}}
 			<div>
 				{{ .Content }}
 			</div>
