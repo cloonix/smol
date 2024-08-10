@@ -3,24 +3,13 @@ html {
 }
 
 :root {
-    --bgcolor: white;
-    --fontcolor: #444;
-    --linkcolor: #00e;
-    --visitedcolor: #551a8b;
+    --hcolor: #b3df15;
+    --bgcolor: rgb(41, 41, 41);
+    --fontcolor: white;
+    --linkcolor: #55bbff;
+    --visitedcolor: #5bf;
     --precolor: #fff;
-    --prebgcolor: #000;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --hcolor: #b3df15;
-        --bgcolor: rgb(41, 41, 41);
-        --fontcolor: white;
-        --linkcolor: #55bbff;
-        --visitedcolor: #5bf;
-        --precolor: #fff;
-        --prebgcolor: rgb(41, 41, 41);
-    }
+    --prebgcolor: rgb(41, 41, 41);
 }
 
 body {
