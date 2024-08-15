@@ -8,7 +8,7 @@ html {
     --fontcolor: white;
     --linkcolor: #55bbff;
     --visitedcolor: #5bf;
-    --precolor: #fff;
+    --precolor: #b3df15;
     --prebgcolor: rgb(41, 41, 41);
 }
 
@@ -57,7 +57,11 @@ p>code {
 code {
     color: var(--precolor);
     background: var(--prebgcolor);
-    padding: 2px
+    padding: 2px;
+}
+
+.highlight code {
+    color: var(--fontcolor);
 }
 
 pre {
