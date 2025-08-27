@@ -13,7 +13,7 @@
 			{{ range .Pages }}
 			<li>
 				<div class="post-title">
-					{{ if or (eq $listtitle "Blog") (eq $listtitle "Bookmarks") }}
+					{{ if ne $.Kind "taxonomy" }}
 					<time>{{ .Date.Format "2006-01-02" }}</time> <a href="{{ .RelPermalink }}">{{.Title }}</a>
 					{{ else }}
 					<a href="{{ .RelPermalink }}">{{.Title }}</a>
