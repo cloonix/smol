@@ -2,12 +2,10 @@
 	<main>
 		<article>
 			{{ if .Date }}
-			<b><time>{{ .Date.Format (default "2006-01-02 15:04" .Site.Params.dateFmt) }}</time></b>
-		       {{ range .Params.tags }}
-		           <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
-       	       {{ end }}
-			{{ end }}
 			<h1>{{ .Title }}</h1>
+			<p><time>published {{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time>
+			<small>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a> {{ end }}</small></p>
+			{{ end }}
 			{{- if .Params.toc -}}
             <div class="toc">
                 <h2>Table of Content</h2>
