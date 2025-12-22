@@ -3,7 +3,9 @@ html {
 }
 
 :root {
-    --hcolor: #b3df15;
+    --h3color: #ff79c6;
+    --h1color: #50fa7b;
+    --h2color: #ffb86c;
     --bgcolor: #292929;
     --fontcolor: white;
     --linkcolor: #55bbff;
@@ -18,7 +20,7 @@ body {
     max-width: 800px;
     margin: 40px auto;
     padding: 0px 10px;
-    font: 15px/1.5 monospace;
+    font: 15px/1.7 monospace;
     color: var(--fontcolor);
     background: var(--bgcolor)
 }
@@ -29,19 +31,81 @@ a:active {
     color: var(--linkcolor)
 }
 
-h1,
-h2,
+h1 {
+    color: var(--h1color);
+    line-height: 1.2;
+    font-size: 1.6em;
+    padding-top: 12px;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: var(--h2color);
+    line-height: 1.2;
+    font-size: 1.4em;
+    padding-top: 12px;
+    margin-bottom: 0.5em;
+}
+
 h3 {
-    color: var(--hcolor);
+    color: var(--h3color);
     line-height: 1.2;
     font-size: 1.2em;
     padding-top: 12px;
+    margin-bottom: 0.5em;
+}
+
+p, ul, ol, blockquote, table, pre, .highlight {
+    margin-bottom: 1.5em;
+}
+
+blockquote {
+    border-left: 3px solid var(--h1color);
+    margin: 20px 0;
+    padding: 5px 20px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid var(--prebgcolor);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--prebgcolor);
+    color: var(--h1color);
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed var(--h1color);
+    margin: 30px 0;
+}
+
+.toc {
+    background: var(--prebgcolor);
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid var(--h1color);
+}
+
+.toc h2 {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 h1>a:link,
 h1>a:visited,
 h1>a:active {
-    color: var(--hcolor);
+    color: var(--h1color);
     padding-top: 12px;
 }
 
@@ -53,7 +117,26 @@ time {
 p>code {
     color: var(--precolor);
     background: var(--prebgcolor);
-    padding: 1px;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+strong {
+    color: var(--h1color);
+}
+
+mark {
+    background: var(--h1color);
+    color: var(--bgcolor);
+    padding: 0 2px;
+}
+
+kbd {
+    background: var(--fontcolor);
+    color: var(--bgcolor);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 0.9em;
 } 
 
 article {
@@ -99,10 +182,25 @@ img {
 
 header,
 footer {
-    a:link {
-        text-decoration: none;
-        font-style: normal;
-    }
+    margin: 40px 0;
+}
+
+header a:link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin-right: 15px;
+    font-size: 0.9em;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 ol,
