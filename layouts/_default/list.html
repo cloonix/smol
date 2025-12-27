@@ -10,7 +10,7 @@
 		{{ end }}
 
 		<ul>
-			{{ range .Pages }}
+			{{ range .Pages.ByTitle }}
 			<li>
 				<div class="post-title">
 					{{ if ne $.Kind "taxonomy" }}
