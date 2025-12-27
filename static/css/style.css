@@ -211,3 +211,18 @@ ul {
 ul>li {
     list-style-type: disclosure-closed;
 }
+
+.contact-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.contact-footer hr {
+    border-top: 1px dashed var(--h2color);
+    margin-bottom: 20px;
+}
+
+.contact-footer p {
+    font-size: 0.9em;
+    color: #999;
+}

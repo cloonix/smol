@@ -77,6 +77,33 @@ Lastly, add the following lines to your `config.toml` to set site parameters and
 For more information read the official [quick start guide](https://gohugo.io/getting-started/quick-start/) of Hugo.
 
 ## Optional features
+
+### Contact footer on blog posts
+Display author contact information at the end of blog posts. Enable it by adding this to your `config.toml`:
+
+```toml
+[params]
+    showContactFooter = true
+
+[params.author]
+    name = "Your Name"
+    email = "your@email.com"
+```
+
+The contact footer will:
+- Only appear on blog posts (pages in `mainSections`)
+- Display your email address with a mailto link
+- Show social links from your footer menu (excluding Imprint and Privacy Policy)
+- Use a minimal design matching the theme aesthetic
+
+You can also enable/disable the contact footer per post using frontmatter:
+
+```yaml
+---
+showContactFooter: true
+---
+```
+
 ### Custom copyright text
 Add `copyright = "Your text here"` - in the config.toml to change the copyright notice in the footer.
 

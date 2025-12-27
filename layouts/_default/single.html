@@ -14,10 +14,11 @@
                 </aside>
             </div>
             {{- end -}}
-			<div>
-				{{ .Content }}
-			</div>
-		</article>
-	</main>
+		<div>
+			{{ .Content }}
+		</div>
+		{{ partial "contact-footer.html" . }}
+	</article>
+</main>
 {{ partial "sidebar.html" . }}
 {{ end }}
