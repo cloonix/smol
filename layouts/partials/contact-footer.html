@@ -11,7 +11,7 @@
 		{{- end -}}
 		{{- if .Site.Menus.footer -}}
 		<br>
-		Find me on: 
+		Find me on:{{ " " }}
 		{{- range $index, $item := .Site.Menus.footer -}}
 			{{- if and (ne $item.Name "Imprint") (ne $item.Name "Privacy Policy") -}}
 				{{- if $index }} | {{ end -}}
