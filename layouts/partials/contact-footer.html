@@ -1,7 +1,6 @@
 {{- if or .Site.Params.showContactFooter .Params.showContactFooter -}}
 {{- if in .Site.Params.mainSections .Section -}}
 <div class="contact-footer">
-	<hr>
 	<p>
 		Questions or feedback? Find me on:{{ " " }}
 		{{- range $index, $item := .Site.Menus.footer -}}
