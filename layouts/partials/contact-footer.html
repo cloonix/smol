@@ -3,21 +3,12 @@
 <div class="contact-footer">
 	<hr>
 	<p>
-		{{- with .Site.Params.author.name -}}
-		Questions or feedback? Reach out at{{ " " }}
-		{{- end -}}
-		{{- with .Site.Params.author.email -}}
-		<a href="mailto:{{ . }}">{{ . }}</a>
-		{{- end -}}
-		{{- if .Site.Menus.footer -}}
-		<br>
-		Find me on:{{ " " }}
+		Questions or feedback? Find me on:{{ " " }}
 		{{- range $index, $item := .Site.Menus.footer -}}
 			{{- if and (ne $item.Name "Imprint") (ne $item.Name "Privacy Policy") -}}
 				{{- if $index }} | {{ end -}}
 				<a href="{{ $item.URL }}">{{ $item.Name }}</a>
 			{{- end -}}
-		{{- end -}}
 		{{- end -}}
 	</p>
 </div>
