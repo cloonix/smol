@@ -34,14 +34,16 @@ a:active {
 h1 {
     color: var(--h1color);
     line-height: 1.2;
-    font-size: 1.6em;
+    font-weight: normal; 
+    font-size: 1.4em;
     padding-top: 12px;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.6em;
 }
 
 h2 {
     color: var(--h2color);
     line-height: 1.2;
+    font-weight: normal; 
     font-size: 1.4em;
     padding-top: 12px;
     margin-bottom: 0.5em;
@@ -50,6 +52,7 @@ h2 {
 h3 {
     color: var(--h3color);
     line-height: 1.2;
+    font-weight: normal; 
     font-size: 1.2em;
     padding-top: 12px;
     margin-bottom: 0.5em;
